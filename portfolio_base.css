@@ -1,0 +1,187 @@
+@charset "utf-8";
+
+
+html {
+    background-image: linear-gradient(#a4b4d8, whitesmoke);
+}
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    color: whitesmoke;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+div img {
+    border-radius: 10%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav a:hover, #contact a:hover {
+    color: #1b2750;
+    border-bottom: 2px solid #1b2750;
+}
+
+nav a, #contact a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+a#navicon {
+    font-size: 2rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+article#home {
+    background-color:#4a5ab2;
+}
+
+article#goals, article#goals h2 {
+    background-color: #4a5ab2;
+}
+
+h2 {
+    text-align: center;
+    color: #1b2750;
+}
+
+#home p:nth-of-type(2)::first-line {
+    font-size: larger;
+    font-weight: bold;
+    color: #1b2750;
+}
+
+#home p:nth-of-type(1):first-letter {
+    font-size: 2rem;
+    color: #1b2750;
+}
+
+#home p, #home div {
+    padding: 10px;
+}
+
+article#skills {
+    background-color:  #8998fd;
+}
+
+div#skills_container1 div, div#skills_container2 div{
+    background-color: #4a5ab2;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+article#aresume, div#resume {
+    background-color:  #8998fd;
+}
+
+article#aresume h2 {
+    text-align: center;
+}
+
+#resume h3, #resume h4 {
+    color: #1b2750;
+    vertical-align: center;
+}
+
+#skills h2 {
+    text-align: center;
+}
+
+#contact {
+    background-color:#4a5ab2;
+}
+
+footer {
+    border-top: 2px solid #1b2750;
+    text-align: center;
+    background-color:#8998fd;
+}
+
+ /* Source: https://medium.com/@egwuchinedu69/ ... */
+
+  .container h2 {
+    color: #1b2750;
+    text-align: center;
+  }
+
+  input, select, textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  button {
+    background-color: rgb(34, 36, 36);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #ec8800;
+  }
+
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+  }
+
+
+
+/* ===========================================
+	Mobile Styles: 0px to 480 pixels
+   ===========================================
+*/
+
+@media only screen and (max-width: 480px) {
+
+    article#home {
+        background-color: #4a5ab2;
+    }
+
+    header {
+        background-color: #4a5ab2;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    header h1 {
+        color: aliceblue;
+    }
+
+    nav ul li {
+        text-align: center;
+    }
+
+}
+
+
+/* ============================================
+	Tablet and Desktop: 481px or more 
+   ============================================
+*/
+
+@media only screen and (min-width: 481px) {
+
+    header {
+        background-color: #4a5ab2;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    header h1 {
+        color: aliceblue;
+    }
+
+}
+
+
+/* ============================================
+	Only Desktop Devices: 769px or more 
+   ============================================
+*/
+
+@media only screen and (min-width: 769px) {
+
+}
