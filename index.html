@@ -3,287 +3,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matheus Oliveira</title>
-    <link rel="icon" type="image/x-icon" href="./media/mo-favicon-white.png">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="./main.js" defer></script>
+    <link rel="icon" type="image/png" href="/assets/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Willian Oliveira | Arquitetura</title>
 </head>
-<body class="bg-gray-800 text-gray-400 ">
-    <nav class="bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-600">
-        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="#welcome" class="flex items-center space-x-3 rtl:space-x-reverse">
-            <img src="./media/mo-high-resolution-logo-white-transparent.png" class="h-8" alt="Logo">
-        </a>
-        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-            <a href="https://github.com/oliveirasmatheus" type="button" class="self-center text-white focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 text-center bg-indigo-700 focus:ring-blue-800">Github Profile</a>
-            <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg lg:hidden focus:outline-none focus:ring-2 text-gray-400 hover:bg-gray-700 focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
-                <span class="sr-only">Open main menu</span>
-                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-                </svg>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a href="#home"><img id="home" src="/assets/logo.png" alt="logo" class="navbar-brand img-fluid"></a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
             </button>
         </div>
-        <div class="items-center justify-between hidden w-full lg:flex lg:w-auto md:order-1" id="navbar-sticky">
-            <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 bg-gray-800 md:bg-gray-900 border-gray-700">
-            <li>
-            </li>
-            <li>
-                <a href="#about" class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 text-white hover:bg-gray-700 hover:text-indigo-500 border-gray-700">About</a>
-            </li>
-            <li>
-                <a href="#experience" class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 text-white hover:bg-gray-700 hover:text-indigo-500 border-gray-700">Experience</a>
-            </li>
-            <li>
-                <a href="#projects" class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 text-white hover:bg-gray-700 hover:text-indigo-500 border-gray-700">Projects</a>
-            </li>
-            <li>
-                <a href="#contact" class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 text-white hover:bg-gray-700 hover:text-indigo-500 border-gray-700">Contact</a>
-            </li>
-            <li>
-                <a href="./media/matheusoliveira.pdf" class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 text-white hover:bg-gray-700 hover:text-indigo-500 border-gray-700">Resume</a>
-            </li>
-            <li>
-                <a href="./media/letter.pdf" class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 text-white hover:bg-gray-700 hover:text-indigo-500 border-gray-700">Cover Letter</a>
-            </li>
+        <div class="collapse navbar-collapse topp w-100 px-2" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <hr class="my-1 text-white">
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Projetos</a>
+                </li>
+                <hr class="my-1 text-white">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">Sobre</a>
+                </li>
+                <hr class="my-1 text-white">
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contato</a>
+                </li>
             </ul>
-        </div>
         </div>
     </nav>
 
-    <section id="welcome" class="flex flex-col-reverse md:flex-row max-w-screen-xl mx-auto pt-24 pb-24 md:py-16 px-4 md:h-screen items-center">
-
-            <div class="flex flex-col w-full md:w-2/5 items-center md:items-start justify-start">
-                <p class="text-center md:text-left text-white font-bold text-2xl">Hi, I am <br><spam class="text-4xl">Matheus Oliveira.</spam></p>
-                <p class="text-center md:text-left text-indigo-500 font-mono tracking-tight text-2xl pb-2">I'm a software developer.</p>
-                <p class="text-center md:text-left pb-4">I specialize in quickly acquiring new skills and mastering programming languages, problem-solving, and database management. Currently proficient in C, C#, C++, Java, SQL, Python, HTML, CSS, JavaScript, Django, Linux, and Git/GitHub. I've also embarked on learning React and Node.js. With these skills, I am always eager to acquire new knowledge and further refine my expertise.</p>
-                <a type="button" class="self-center md:self-start text-white focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 text-center bg-indigo-600 hover:bg-indigo-700 focus:ring-blue-800 w-fit" href="mailto:matheus.oliveeira@gmail.com">Contact Me</a>
-            </div>
-
-            <div class="w-full md:w-3/5 relative p-8 overflow-x-hidden overflow-y-auto">
-                <img src="./media/profile_new.jpeg" alt="profile" class="mx-auto rounded-full z-20">
-                <div class="absolute bottom-[40px] left-1/2 -z-10 transform -translate-x-1/2 w-[600px] h-full overflow-y-hidden">
-                    <svg class="BgAnimation__svg" viewBox="0 0 602 602" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.15"><path fill-rule="evenodd" clip-rule="evenodd" d="M201.337 87.437C193.474 79.5738 180.725 79.5738 172.862 87.437L87.437 172.862C79.5739 180.725 79.5739 193.474 87.437 201.337L400.663 514.563C408.526 522.426 421.275 522.426 429.138 514.563L514.563 429.138C522.426 421.275 522.426 408.526 514.563 400.663L201.337 87.437ZM30.4869 115.912C-8.82897 155.228 -8.82897 218.972 30.4869 258.287L343.713 571.513C383.028 610.829 446.772 610.829 486.088 571.513L571.513 486.088C610.829 446.772 610.829 383.028 571.513 343.713L258.287 30.4869C218.972 -8.82896 155.228 -8.82896 115.912 30.4869L30.4869 115.912Z" stroke="url(#paint0_radial)" id="path_0"></path><path d="M514.563 201.337C522.426 193.474 522.426 180.725 514.563 172.862L429.138 87.437C421.275 79.5738 408.526 79.5739 400.663 87.437L358.098 130.002L301.148 73.0516L343.713 30.4869C383.028 -8.82896 446.772 -8.82896 486.088 30.4869L571.513 115.912C610.829 155.228 610.829 218.972 571.513 258.287L357.802 471.999L300.852 415.049L514.563 201.337Z" stroke="url(#paint1_radial)" id="path_1"></path><path d="M243.901 471.999L201.337 514.563C193.474 522.426 180.725 522.426 172.862 514.563L87.437 429.138C79.5739 421.275 79.5739 408.526 87.437 400.663L301.148 186.952L244.198 130.002L30.4869 343.713C-8.82897 383.028 -8.82897 446.772 30.4869 486.088L115.912 571.513C155.228 610.829 218.972 610.829 258.287 571.513L300.852 528.949L243.901 471.999Z" stroke="url(#paint2_radial)" id="path_2"></path></g><ellipse cx="295.027" cy="193.118" transform="translate(-295.027 -193.118)" rx="1.07306" ry="1.07433" fill="#945DD6"><animateMotion dur="10s" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#path_2"></mpath></animateMotion></ellipse><path d="M294.685 193.474L268.932 219.258" transform="translate(-294.685 -193.474) rotate(45 294.685 193.474)" stroke="url(#paint3_linear)"><animateMotion dur="10s" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#path_2"></mpath></animateMotion></path><ellipse cx="295.027" cy="193.118" transform="translate(-295.027 -193.118)" rx="1.07306" ry="1.07433" fill="#46737"><animateMotion dur="5s" begin="1" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#path_2"></mpath></animateMotion></ellipse><path d="M294.685 193.474L268.932 219.258" transform="translate(-294.685 -193.474) rotate(45 294.685 193.474)" stroke="url(#paint7_linear)"><animateMotion dur="5s" begin="1" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#path_2"></mpath></animateMotion></path><ellipse cx="476.525" cy="363.313" rx="1.07433" ry="1.07306" transform="translate(-476.525 -363.313) rotate(90 476.525 363.313)" fill="#945DD6"><animateMotion dur="10s" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#path_0"></mpath></animateMotion></ellipse><path d="M476.171 362.952L450.417 337.168" transform="translate(-476.525 -363.313) rotate(-45 476.171 362.952)" stroke="url(#paint4_linear)"><animateMotion dur="10s" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#path_0"></mpath></animateMotion></path><ellipse cx="382.164" cy="155.029" rx="1.07433" ry="1.07306" transform="translate(-382.164 -155.029) rotate(90 382.164 155.029)" fill="#F46737"><animateMotion dur="10s" begin="1" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#path_0"></mpath></animateMotion></ellipse><path d="M381.81 154.669L356.057 128.885" transform="translate(-381.81 -154.669) rotate(-45 381.81 154.669)" stroke="url(#paint5_linear)"><animateMotion dur="10s" begin="1" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#path_0"></mpath></animateMotion></path><ellipse cx="333.324" cy="382.691" rx="1.07306" ry="1.07433" transform="translate(-333.324 -382.691) rotate(-180 333.324 382.691)" fill="#F46737"><animateMotion dur="5s" begin="0" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#path_1"></mpath></animateMotion></ellipse><path d="M333.667 382.335L359.42 356.551" transform="scale(-1 1) translate(-333.667 -382.335) rotate(45 333.667 382.335)" stroke="url(#paint6_linear)"><animateMotion dur="5s" begin="0" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#path_1"></mpath></animateMotion></path><ellipse cx="165.524" cy="93.9596" rx="1.07306" ry="1.07433" transform="translate(-165.524 -93.9596)" fill="#F46737"><animateMotion dur="10s" begin="3" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#path_0"></mpath></animateMotion></ellipse><path d="M165.182 94.3159L139.429 120.1" transform="translate(-165.182 -94.3159) rotate(45 165.182 94.3159)" stroke="url(#paint7_linear)"><animateMotion dur="10s" begin="3" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#path_0"></mpath></animateMotion></path><ellipse cx="476.525" cy="363.313" rx="1.07433" ry="1.07306" transform="translate(-476.525 -363.313) rotate(90 476.525 363.313)" fill="#13ADC7"><animateMotion dur="12s" begin="4" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#path_0"></mpath></animateMotion></ellipse><path d="M476.171 362.952L450.417 337.168" transform="translate(-476.525 -363.313) rotate(-45 476.171 362.952)" stroke="url(#paint11_linear)"><animateMotion dur="12s" begin="4" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#path_0"></mpath></animateMotion></path><defs><radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(301 301) rotate(90) scale(300)"><stop offset="0.333333" stop-color="#FBFBFB"></stop><stop offset="1" stop-color="white" stop-opacity="0"></stop></radialGradient><radialGradient id="paint1_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(301 301) rotate(90) scale(300)"><stop offset="0.333333" stop-color="#FBFBFB"></stop><stop offset="1" stop-color="white" stop-opacity="0"></stop></radialGradient><radialGradient id="paint2_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(301 301) rotate(90) scale(300)"><stop offset="0.333333" stop-color="#FBFBFB"></stop><stop offset="1" stop-color="white" stop-opacity="0"></stop></radialGradient><linearGradient id="paint3_linear" x1="295.043" y1="193.116" x2="269.975" y2="218.154" gradientUnits="userSpaceOnUse"><stop stop-color="#945DD6"></stop><stop offset="1" stop-color="#945DD6" stop-opacity="0"></stop></linearGradient><linearGradient id="paint4_linear" x1="476.529" y1="363.31" x2="451.461" y2="338.272" gradientUnits="userSpaceOnUse"><stop stop-color="#945DD6"></stop><stop offset="1" stop-color="#945DD6" stop-opacity="0"></stop></linearGradient><linearGradient id="paint5_linear" x1="382.168" y1="155.027" x2="357.1" y2="129.989" gradientUnits="userSpaceOnUse"><stop stop-color="#F46737"></stop><stop offset="1" stop-color="#F46737" stop-opacity="0"></stop></linearGradient><linearGradient id="paint6_linear" x1="333.309" y1="382.693" x2="358.376" y2="357.655" gradientUnits="userSpaceOnUse"><stop stop-color="#F46737"></stop><stop offset="1" stop-color="#F46737" stop-opacity="0"></stop></linearGradient><linearGradient id="paint7_linear" x1="165.54" y1="93.9578" x2="140.472" y2="118.996" gradientUnits="userSpaceOnUse"><stop stop-color="#F46737"></stop><stop offset="1" stop-color="#F46737" stop-opacity="0"></stop></linearGradient><linearGradient id="paint8_linear" x1="414.367" y1="301.156" x2="439.435" y2="276.118" gradientUnits="userSpaceOnUse"><stop stop-color="#13ADC7"></stop><stop offset="1" stop-color="#13ADC7" stop-opacity="0"></stop></linearGradient><linearGradient id="paint9_linear" x1="515.943" y1="288.238" x2="541.339" y2="291.454" gradientUnits="userSpaceOnUse"><stop stop-color="#13ADC7"></stop><stop offset="1" stop-color="#13ADC7" stop-opacity="0"></stop></linearGradient><linearGradient id="paint10_linear" x1="117.001" y1="230.619" x2="117.36" y2="258.193" gradientUnits="userSpaceOnUse"><stop stop-color="#945DD6"></stop><stop offset="1" stop-color="#945DD6" stop-opacity="0"></stop></linearGradient><linearGradient id="paint11_linear" x1="476.529" y1="363.31" x2="451.461" y2="338.272" gradientUnits="userSpaceOnUse"><stop stop-color="#13ADC7"></stop><stop offset="1" stop-color="#13ADC7" stop-opacity="0"></stop></linearGradient></defs></svg>
-                </div>
-            </div>
-    </section>
-
-
-
-    <section id="about" class="flex flex-col max-w-screen-xl mx-auto">
-        <div class="px-4">
-            <h2 class="text-white text-center md:text-left  font-bold text-2xl pb-2">About Me</h2>
-            <p class="text-center md:text-left pb-4">As far back as I can remember, I have always dreamed of becoming a mechanical engineer who can design and build new products. Upon completing my bachelor's degree in mechanical engineering, I gravitated toward quality control, design, and research and development. After a few years of working in the industry, I was missing the challenge. I felt that I needed to learn something different. </p>
-            <p class="text-center md:text-left pb-4">All of this changed when I did my first Python introduction video. I could not stop thinking about what else I could build by mastering this skill. So I flipped my entire life by moving from Brazil to Canada and starting a 2-year IT Programming program.</p>
-            <p class="text-center md:text-left pb-4">Since then, I've learned how programs are integrated with databases, what well-written code looks like, and how to build user interface designs. Back-end development calls to all my passions; how it incorporates problem-solving and critical thinking. From developing a web application to creating a mobile application, there's nothing more thrilling than the challenge of tackling a new project and finding the most efficient and effective solution.</p> 
-            <p class="text-center md:text-left pb-4">My specialties include quickly learning new skills and programming languages, problem-solving, and database management. So far I have C, Java, SQL, Python, HTML, CSS, Javascript, Linux (Mint), and Git/GitHub under my belt. I've started learning React and Node.js. With these specialties, I am always eager to acquire new knowledge and refine the skills I currently possess.</p>
+    <!-- Hero Section -->
+    <section class="hero-section bg-dark text-white text-center d-flex align-items-center justify-content-center">
+        <div class="container">
+            <h1 class="display-4">Escritório de Arquitetura em Tramandaí</h1>
+            <a href="#services" class="btn btn-outline-light btn-lg mt-3">Nossos Serviços</a>
         </div>
     </section>
 
-
-
-
-
-
-    <section id="experience" class="flex flex-col max-w-screen-xl mx-auto pt-16 mb-16 px-4">
-        <h2 class="text-white text-center md:text-left font-bold text-2xl pb-2">Experience</h2>
-        
-        <div id="accordion-collapse" data-accordion="collapse">
-            <div id="accordion-collapse-heading-1" class="accordion-heading">
-                <button type="button" class="accordion-button flex items-center justify-between w-full p-5 font-medium rtl:text-right border border-b-0 rounded-t-xl focus:ring-4 focus:ring-gray-800 border-gray-700 text-gray-400 hover:bg-gray-800 gap-3" aria-expanded="false" data-target="accordion-collapse-body-1">
-                    <span>Clockk</span>
-                    <svg class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
-                    </svg>
-                </button>
-            </div>
-            <div id="accordion-collapse-body-1" class="accordion-content hidden">
-                <div class="p-5 border border-b-0 border-gray-700 bg-gray-900">
-                    <h3 class="mb-2 text-xl text-white">Co-op Software Developer</h3>
-                    <div class="flex flex-row mb-2 flex-wrap">
-                        <div class="font-thin text-white rounded-full text-xs px-2 py-1 mr-2 my-2 text-center bg-indigo-600 hover:bg-indigo-700 focus:ring-blue-800">JavaScript</div>
-                        <div class="font-thin text-white rounded-full text-xs px-2 py-1 mr-2 my-2 text-center bg-indigo-600 hover:bg-indigo-700 focus:ring-blue-800">AWS</div>
-                        <div class="font-thin text-white rounded-full text-xs px-2 py-1 mr-2 my-2 text-center bg-indigo-600 hover:bg-indigo-700 focus:ring-blue-800">CMS</div>
-                        <div class="font-thin text-white rounded-full text-xs px-2 py-1 mr-2 my-2 text-center bg-indigo-600 hover:bg-indigo-700 focus:ring-blue-800">PostgreSQL</div>
-                        <div class="font-thin text-white rounded-full text-xs px-2 py-1 mr-2 my-2 text-center bg-indigo-600 hover:bg-indigo-700 focus:ring-blue-800">GitHub</div>
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Nossos Serviços</h2>
+            <div class="row">
+                <!-- Example static projects -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center">
+                        <img src="assets/casa_de_campo.jpg" alt="Example Project" class="card-img-top" style="max-height: 300px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Casa de Campo</h5>
+                            <p class="card-text">Descrição do projeto.</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                                Ver Mais
+                              </button>
+                        </div>
                     </div>
-                    <p class="mb-2 text-gray-400"><span class="text-white">&#x2022; </span>Managed a project for a major Canadian network provider, overseeing the development of a web application for TV shows.</p>
-                    <p class="mb-2 text-gray-400"><span class="text-white">&#x2022; </span>Conducted scrum meetings with the client to provide updates and gather necessary information.</p>
-                    <p class="mb-2 text-gray-400"><span class="text-white">&#x2022; </span>Enahnced PHP skills by creating API requests for database integration.</p>
-                    <p class="mb-2 text-gray-400"><span class="text-white">&#x2022; </span>Proficiently utilized Statamic Pro, Tailwind, JavaScript, HTML, and CSS for responsive design.</p>
-                    <p class="mb-2 text-gray-400"><span class="text-white">&#x2022; </span>Development of web components such as carousel to improve user experience.</p>
                 </div>
-            </div>
-            <div id="accordion-collapse-heading-2" class="accordion-heading">
-                <button type="button" class="accordion-button flex items-center justify-between w-full p-5 font-medium rtl:text-right border border-b-0 focus:ring-4 focus:ring-gray-800 border-gray-700 text-gray-400 hover:bg-gray-800 gap-3" aria-expanded="false" data-target="accordion-collapse-body-2">
-                    <span>SuperPro Bettanin S.A.</span>
-                    <svg class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
-                    </svg>
-                </button>
-            </div>
-            <div id="accordion-collapse-body-2" class="accordion-content hidden">
-                <div class="p-5 border border-b-0 border-gray-700 bg-gray-900">
-                    <h3 class="mb-2 text-xl text-white">Mechanical Engineer</h3>
-                    <div class="flex flex-row mb-2 flex-wrap">
-                        <div class="font-thin text-white rounded-full text-xs px-2 py-1 mr-2 my-2 text-center bg-indigo-600 hover:bg-indigo-700 focus:ring-blue-800">Agile</div>
-                        <div class="font-thin text-white rounded-full text-xs px-2 py-1 mr-2 my-2 text-center bg-indigo-600 hover:bg-indigo-700 focus:ring-blue-800">Scrum</div>
-                        <div class="font-thin text-white rounded-full text-xs px-2 py-1 mr-2 my-2 text-center bg-indigo-600 hover:bg-indigo-700 focus:ring-blue-800">Problem-solving</div>
-                    </div>
-                    <p class="mb-2 text-gray-400"><span class="text-white">&#x2022; </span>Team leader of the improvement team, aiming cost reduction.</p>
-                    <p class="mb-2 text-gray-400"><span class="text-white">&#x2022; </span>Skills Developed: Scrum, Teamwork, responsability, and problem-solving.</p>
-                    <p class="mb-2 text-gray-400"><span class="text-white">&#x2022; </span>Achievement: I managed the development of equipment that increased the packing velocity by 30% and reduced the annual packing cost by $27,000.</p>
-                </div>
-            </div>
-            <div id="accordion-collapse-heading-3" class="accordion-heading">
-                <button type="button" class="accordion-button flex items-center rounded-b-xl justify-between w-full p-5 font-medium rtl:text-right border focus:ring-4 focus:ring-gray-800 border-gray-700 text-gray-400 hover:bg-gray-800 gap-3" aria-expanded="false" data-target="accordion-collapse-body-3">
-                    <span>AGCO Corporation</span>
-                    <svg class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
-                    </svg>
-                </button>
-            </div>
-            <div id="accordion-collapse-body-3" class="accordion-content hidden">
-                <div class="p-5 border border-gray-700 bg-gray-900">
-                    <h3 class="mb-2 text-xl text-white">Product Designer</h3>
-                    <div class="flex flex-row mb-2 flex-wrap">
-                        <div class="font-thin text-white rounded-full text-xs px-2 py-1 mr-2 my-2 text-center bg-indigo-600 hover:bg-indigo-700 focus:ring-blue-800">Design</div>
-                        <div class="font-thin text-white rounded-full text-xs px-2 py-1 mr-2 my-2 text-center bg-indigo-600 hover:bg-indigo-700 focus:ring-blue-800">Documentation</div>
-                        <div class="font-thin text-white rounded-full text-xs px-2 py-1 mr-2 my-2 text-center bg-indigo-600 hover:bg-indigo-700 focus:ring-blue-800">Problem-solving</div>
-                    </div>
-                    <p class="mb-2 text-gray-500 dark:text-gray-400"><span class="text-white">&#x2022; </span>Creating reports by monitoring tractors in-field.</p>
-                    <p class="mb-2 text-gray-500 dark:text-gray-400"><span class="text-white">&#x2022; </span>Develop advanced hydraulic systems for tractors and harvesters, prioritizing efficiency and compatibility across models.</p>
-                    <p class="mb-2 text-gray-500 dark:text-gray-400"><span class="text-white">&#x2022; </span>Hold weekly meetings to review and refine design solutions, fostering collaboration and addressing any challenges proactively.</p>
 
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center">
+                        <img src="assets/escritorio_corporativo.jpg" alt="Example Project" class="card-img-top" style="max-height: 300px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Projeto Exemplo</h5>
+                            <p class="card-text">Descrição do projeto.</p>
+                            <a href="#" class="btn btn-primary">Ver Mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center">
+                        <img src="assets/residencia_moderna.jpg" alt="Example Project" class="card-img-top" style="max-height: 300px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Projeto Exemplo</h5>
+                            <p class="card-text">Descrição do projeto.</p>
+                            <a href="#" class="btn btn-primary">Ver Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat the above block for more projects -->
+            </div>
+        </div>
+    </section>
+
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title" id="exampleModalLabel">Casa de Campo</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="assets/casa_de_campo.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="assets/escritorio_corporativo.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="assets/residencia_moderna.jpg" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <p class="card-text py-3">Descrição do projeto: Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, asperiores maiores officia cupiditate ipsa rem necessitatibus doloribus, exercitationem harum, ut natus tempore voluptates reiciendis suscipit nisi fuga itaque accusantium in?</p>
+                    <p><strong>Área:</strong> 100 m²</p>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Column for the image -->
+                <div class="col-md-6 text-center mb-4 mb-md-0">
+                    <img src="assets/profile.jpeg" alt="About Image" class="img-fluid about-image">
+                </div>
+                <!-- Column for the text -->
+                <div class="col-md-6">
+                    <h2>Sobre Nós</h2>
+                    <p class="lead">
+                        Somos uma empresa de arquitetura focada em criar espaços que 
+                        unem beleza, funcionalidade e sustentabilidade.
+                    </p>
+                    <p>
+                        Com uma equipe de profissionais experientes, oferecemos projetos 
+                        inovadores e personalizados que atendem às necessidades dos nossos clientes.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
-    
-    <section id="projects" class="flex flex-col max-w-screen-xl mx-auto mb-16">
-        <h2 class="text-white text-center md:text-left font-bold text-2xl px-4">Projects</h2>
 
-        <div class="flex flex-wrap">
-            <div class="mx-auto md:w-1/2 lg:w-1/3 p-4">
-                <div class="max-w-sm border rounded-lg shadow bg-gray-900 border-gray-700">
-                    <img class="rounded-t-lg h-[200px] w-full object-cover" src="./media/pokemon.png" alt="poke_thumbnail" />
-                    <div class="p-5">
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Who's that Pokémon?</h5>
-                        <p class="mb-3 font-normal text-gray-400">A interactive Pókemon guessing game based on Wordle.</p>
-                        <a href="./pokemon/poke.html" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none bg-indigo-600 hover:bg-indigo-700 focus:ring-blue-800">
-                            Play Game
-                        </a>
-                        <a href="https://github.com/oliveirasmatheus/pokemon" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none bg-indigo-600 hover:bg-indigo-700 focus:ring-blue-800">
-                            Git Repo
-                        </a>
-                    </div>
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <h2 class="text-center">Fale Conosco</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="name" placeholder="Seu nome">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Seu email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Mensagem</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Sua mensagem"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Enviar</button>
+                    </form>
                 </div>
             </div>
-
-            <div class="mx-auto md:w-1/2 lg:w-1/3 p-4">
-                <div class="max-w-sm border rounded-lg shadow bg-gray-900 border-gray-700">
-                    <img class="rounded-t-lg h-[200px] w-full object-cover" src="./media/audio_translater.png" alt="audio_thumbnail" />
-                    <div class="p-5">
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Audio Translater</h5>
-                        <p class="mb-3 font-normal text-gray-400">AI-powered audio translater from English to French or Spanish.</p>
-                        <a href="./at_video_page.html" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none bg-indigo-600 hover:bg-indigo-700 focus:ring-blue-800">
-                            Check Video
-                        </a>
-                        <a href="https://github.com/oliveirasmatheus/ai_translator" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none bg-indigo-600 hover:bg-indigo-700 focus:ring-blue-800">
-                            Git Repo
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="mx-auto md:w-1/2 lg:w-1/3 p-4">
-                <div class="max-w-sm border rounded-lg shadow bg-gray-900 border-gray-700">
-                    <img class="rounded-t-lg h-[200px] w-full object-cover" src="./media/zombies.png" alt="zombies_thumbail" />
-                    <div class="p-5">
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Humans vs Zombies</h5>
-                        <p class="mb-3 font-normal text-gray-400">Survival of the Fittest: A C++ Predatory Simulation</p>
-                        <a href="./zombies.html" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none bg-indigo-600 hover:bg-indigo-700 focus:ring-blue-800">
-                            Check Video
-                        </a>
-                        <a href="https://github.com/oliveirasmatheus/humans_vs_zombies/" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none bg-indigo-600 hover:bg-indigo-700 focus:ring-blue-800">
-                            Git Repo
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="mx-auto md:w-1/2 lg:w-1/3 p-4">
-                <div class="max-w-sm border rounded-lg shadow bg-gray-900 border-gray-700">
-                    <img class="rounded-t-lg h-[200px] w-full object-cover" src="./media/transitapp.png" alt="zombies_thumbail" />
-                    <div class="p-5">
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Transit App</h5>
-                        <p class="mb-3 font-normal text-gray-400">Streamlining Halifax Transit with Real-Time Information.</p>
-                        <a href="./transitapp.html" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none bg-indigo-600 hover:bg-indigo-700 focus:ring-blue-800">
-                            Check Video
-                        </a>
-                        <a href="https://github.com/oliveirasmatheus/transit_app/" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none bg-indigo-600 hover:bg-indigo-700 focus:ring-blue-800">
-                            Git Repo
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-    </section>
-
-    <section id="supportdocs" class="flex flex-col w-full items-center md:items-start justify-start mb-24 max-w-screen-xl mx-auto">
-        <div class="flex flex-col px-4">
-            <h2 class="text-white text-center md:text-left  font-bold text-2xl pb-2">Support Documents</h2>
-            <a href="https://www.linkedin.com/in/matheussoliveira/details/recommendations/?detailScreenTabIndex=0" class="text-center md:text-left pb-4">Check my LinkedIn Recommendations</a>
-            <a href="https://www.udemy.com/certificate/UC-693b68c7-898c-4093-acc8-11c36caeac8f/" class="text-center md:text-left pb-4">Bootcamp Certificate</a>
-        
-            
         </div>
     </section>
 
-    <section id="contact" class="flex flex-col w-full items-center md:items-start justify-start mb-24 max-w-screen-xl mx-auto">
-        <div class="flex flex-col px-4">
-            <h2 class="text-white text-center md:text-left  font-bold text-2xl pb-2">Contact Me</h2>
-            <p class="text-center md:text-left pb-4">If you would like to know more about any of my projects or if I can assist you in any way, please do not hesitate to contact me.</p>
-            <a type="button" class="self-center md:self-start text-white focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 text-center bg-indigo-600 hover:bg-indigo-700 focus:ring-blue-800 w-fit" href="mailto:matheus.oliveeira@gmail.com">Say Hello</a>
-        </div>
-    </section>
-
-    
-    <footer class="fixed bottom-0 w-full bg-gray-900 border-t border-gray-700">
-        <div class="container mx-auto py-4 flex items-center px-4 max-w-screen-xl">
-            <div class="flex-1 text-left text-sm text-gray-400">
-                Copyright NSCC© , 2022
-            </div>
-            <ul class="flex space-x-4 ml-auto">
-                <li>
-                    <a href="https://github.com/oliveirasmatheus" target="_blank" class="text-gray-600 hover:text-indigo-500" target="_blank">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/oliveeira.matheus/" target="_blank" class="text-gray-600 hover:text-indigo-500" target="_blank">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path>
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="http://www.linkedin.com/in/matheussoliveira/" target="_blank" class="text-gray-600 hover:text-indigo-500" target="_blank">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"></path>
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/matheuso92" target="_blank" class="text-gray-600 hover:text-indigo-500" target="_blank">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
-                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"></path>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
+    <!-- Footer -->
+    <footer class="text-center py-3">
+        <div class="container">
+            <p class="mb-0">&copy; 2024 Willian Oliveira Arquitetura. Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
+
+
